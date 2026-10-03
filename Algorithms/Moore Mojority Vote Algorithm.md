@@ -4,7 +4,7 @@
     Space Complexity: O(1)
 
 ## How it Works ?
-Think of this like a political election where each number is a candidate:
+Think of this like a political election where each number is a candidate:  
 ans tracks the current candidate winning the vote, and count tracks their lead.
 If count hits 0, it means previous candidates have canceled each other out, 
 so we pick a new candidate (ans = num).
