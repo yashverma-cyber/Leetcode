@@ -2,7 +2,6 @@
 // Date   : 03-10-2026
 
 /* Q 2149. Rearrange Array Elements by Sign (medium)
-
 You are given a 0-indexed integer array nums of even length consisting of an
 equal number of positive and negative integers.
 You should return the array of nums such that the array follows the given conditions:
@@ -12,7 +11,6 @@ The rearranged array begins with a positive integer.
 Return the modified array after rearranging the elements to satisfy the aforementioned conditions.
 
 Example 1:
-
 Input: nums = [3,1,-2,-5,2,-4]
 Output: [3,-2,1,-5,2,-4]
 Explanation: The positive integers in nums are [3,1,2]. The negative integers are [-2,-5,-4].
@@ -22,9 +20,7 @@ are incorrect because they do not satisfy one or more conditions.  */
 
 class Solution
 {
-
     /* Approach : Two Pointers */
-
 public:
     vector<int> rearrangeArray(vector<int> &nums)
     {
