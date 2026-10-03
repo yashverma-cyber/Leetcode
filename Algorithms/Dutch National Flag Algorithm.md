@@ -15,7 +15,7 @@ By the time your scanning hand (mid) meets the right boundary (high),
 everything is neatly sorted into its proper section!  
   
   
-## Implementation -> [click here](./Arrays/Sort Colors.cpp)
+## Implementation -> [[click here]](https://github.com/yashverma-cyber/Leetcode/blob/main/Arrays/Sort%20Colors.cpp)
 
 ### Q. You are given an array nums with n objects colored red, white, or blue, 
 sort them in-place so that objects of the same color are adjacent,
