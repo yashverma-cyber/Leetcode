@@ -1,6 +1,6 @@
-#Dutch National Flag Algorithm (Sort Colors: 0s, 1s, 2s)
+# Dutch National Flag Algorithm (Sort Colors: 0s, 1s, 2s)
 
-##The Analogy: Sorting Laundry into Three Baskets
+## The Analogy: Sorting Laundry into Three Baskets
 Imagine you have a messy row of shirts colored Red (0), White (1), and Blue (2) all mixed together. 
 You have three magical boundaries:  
 * low marks where the Red zone ends.  
@@ -15,9 +15,9 @@ By the time your scanning hand (mid) meets the right boundary (high),
 everything is neatly sorted into its proper section!  
   
   
-###Implementation -> 
+## Implementation -> [click here](./Arrays/Sort Colors.cpp)
 
-Q. You are given an array nums with n objects colored red, white, or blue, 
+### Q. You are given an array nums with n objects colored red, white, or blue, 
 sort them in-place so that objects of the same color are adjacent,
  with the colors in the order red, white, and blue.
 We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
