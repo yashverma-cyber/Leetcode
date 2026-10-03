@@ -1,0 +1,29 @@
+/* Approach : Dutch National Flag Algorithm
+    This is a three-way partitioning algorithm that divides the array into three parts:
+    * Divide into low, mid and high pointers.
+    move mid, if mid == 0 , swap mid and low, increment both mid and low (put in left side)
+    if mid == 1, increment mid  (keep 1 in middle)
+    and if mid == 2, swap mid and high, decrement high. (put all 2s in right side)
+    */
+
+public:
+    void sortColors(vector<int> &nums)
+    {
+        int low = 0, mid = 0, high = size(nums) - 1;
+        while (mid <= high)
+        {
+            if (nums[mid] == 0)
+            {
+                swap(nums[low], nums[mid]);
+                ++low;
+                ++mid;
+            }
+            else if (nums[mid] == 1)
+                ++mid;
+            else
+            {
+                swap(nums[mid], nums[high]);
+                --high;
+            }
+        }
+    }
