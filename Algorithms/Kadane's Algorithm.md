@@ -12,7 +12,7 @@ In code: sum = max(num, sum + num) handles this.
 If sum + num drops lower than the current house's value (num),  
  you drop the past baggage and start fresh right there.  
 
-## Implementation --> [[click here]](https://github.com/yashverma-cyber/Leetcode/blob/main/Arrays/Maximum%20Subarray.cpp)
+## Implementation --> [[click here]](../Arrays/Maximum%20Subarray.cpp)
   
 ### Q. Given an integer array nums, find the subarray with the largest sum, and return its sum.  
 
