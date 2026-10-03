@@ -13,7 +13,7 @@ Think of this like a political election where each number is a candidate:
 Because the majority element appears more than half the time (floor(n/2)),   
 it is mathematically guaranteed to survive the cancellations and remain as ans at the end.  
   
-## Implementation -> [click here](Arrays/Majority Element.cpp)
+## Implementation -> [click here](../Arrays/Majority Element.cpp)
 
 ```
 class Solution {
