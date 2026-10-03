@@ -1,18 +1,18 @@
-# Boyer-Moore Voting Algorithm
+# Boyer-Moore Voting Algorithm  
 ## Problem Example: Majority Element (LeetCode 169)
     Time Complexity: O(n)
     Space Complexity: O(1)
 
 ## How it Works ?
 Think of this like a political election where each number is a candidate:  
-ans tracks the current candidate winning the vote, and count tracks their lead.
-If count hits 0, it means previous candidates have canceled each other out, 
-so we pick a new candidate (ans = num).
-When we see our candidate again, we add +1 to count. 
-When we see a different number, we subtract -1.
-Because the majority element appears more than half the time (floor(n/2)), 
-it is mathematically guaranteed to survive the cancellations and remain as ans at the end.
-
+ans tracks the current candidate winning the vote, and count tracks their lead.  
+If count hits 0, it means previous candidates have canceled each other out,   
+so we pick a new candidate (ans = num).  
+When we see our candidate again, we add +1 to count.   
+When we see a different number, we subtract -1.  
+Because the majority element appears more than half the time (floor(n/2)),   
+it is mathematically guaranteed to survive the cancellations and remain as ans at the end.  
+  
 ## Implementation -> [click here](./Arrays/Majority Element.cpp)
 
 ```
