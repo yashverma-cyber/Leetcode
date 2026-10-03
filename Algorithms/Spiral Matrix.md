@@ -1,5 +1,5 @@
 # Spiral Matrix 
-  
+  Time Complexity -> O(m*n)
 Approach -> s = start, e = end  
 * int srow = 0, erow = n - 1;  
 * int scol = 0, ecol = m - 1;
