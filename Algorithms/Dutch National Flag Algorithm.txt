@@ -1,29 +1,50 @@
-/* Approach : Dutch National Flag Algorithm
-    This is a three-way partitioning algorithm that divides the array into three parts:
-    * Divide into low, mid and high pointers.
-    move mid, if mid == 0 , swap mid and low, increment both mid and low (put in left side)
-    if mid == 1, increment mid  (keep 1 in middle)
-    and if mid == 2, swap mid and high, decrement high. (put all 2s in right side)
-    */
+#Dutch National Flag Algorithm (Sort Colors: 0s, 1s, 2s)
 
+##The Analogy: Sorting Laundry into Three Baskets
+Imagine you have a messy row of shirts colored Red (0), White (1), and Blue (2) all mixed together. 
+You have three magical boundaries:  
+* low marks where the Red zone ends.  
+* high marks where the Blue zone starts.  
+* mid is you holding the shirt you are currently inspecting.  
+  
+You walk down the line (mid):    
+* If you pick up a Red (0), you swap it to the left side into the Red zone, and push your boundaries forward.  
+* If you pick up a Blue (2), you swap it to the right side into the Blue zone.  
+* If you pick up a White (1), it's already in the middle where it belongs, so you just walk past it.  
+By the time your scanning hand (mid) meets the right boundary (high),   
+everything is neatly sorted into its proper section!  
+  
+  
+###Implementation -> 
+
+Q. You are given an array nums with n objects colored red, white, or blue, 
+sort them in-place so that objects of the same color are adjacent,
+ with the colors in the order red, white, and blue.
+We will use the integers 0, 1, and 2 to represent the color red, white, and blue, respectively.
+
+Example:  
+Input: nums = [2,0,2,1,1,0]  
+Output: [0,0,1,1,2,2]  
+Explanation: The array has two 0s, two 1s, and two 2s.   
+Sorting them in-place places all 0s first, then all 1s, then all 2s.  
+  
+```
+class Solution {
 public:
-    void sortColors(vector<int> &nums)
-    {
-        int low = 0, mid = 0, high = size(nums) - 1;
-        while (mid <= high)
-        {
-            if (nums[mid] == 0)
-            {
+    void sortColors(vector<int>& nums) {
+        int low = 0, mid = 0, high = size(nums)-1;
+        while(mid <= high) {
+            if(nums[mid] == 0) {
                 swap(nums[low], nums[mid]);
                 ++low;
                 ++mid;
             }
-            else if (nums[mid] == 1)
-                ++mid;
-            else
-            {
+            else if(nums[mid] == 1) ++mid;
+            else {
                 swap(nums[mid], nums[high]);
                 --high;
             }
         }
     }
+};
+```
