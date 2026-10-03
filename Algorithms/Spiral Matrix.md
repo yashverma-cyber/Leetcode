@@ -1,15 +1,21 @@
-/* Q 54. Spiral Matrix (medium)  
-Given an m x n matrix, return all elements of the matrix in spiral order.  
+# Spiral Matrix 
+  
+Approach -> s = start, e = end  
+* int srow = 0, erow = n - 1;  
+* int scol = 0, ecol = m - 1;
+* Traverse Top Row (Left to Right) then go to below row by ++srow
+* Traverse Right Column (Top to Bottom) then shift end row forward by --erow
+* Traverse Bottom Row (Right to Left) then shift ending row up by --erow;
+* Traverse Left Column (Bottom to Top) then shift starting column to right by ++scol;
 
+## Q. Given an m x n matrix, return all elements of the matrix in spiral order.  
 Example:  
 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]  
-Output: [1,2,3,6,9,8,7,4,5] */  
+Output: [1,2,3,6,9,8,7,4,5] 
 
-Implementation ->  [click here](../Arrays/Spiral%20Matrix.cpp)  
+### Implementation ->  [click here](../Arrays/Spiral%20Matrix.cpp)  
 
 ```
-class Solution
-{
 public:
     vector<int> spiralOrder(vector<vector<int>> &matrix)
     {
@@ -58,4 +64,4 @@ public:
         }
         return ans;
     }
-};```
+```
