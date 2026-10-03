@@ -15,6 +15,7 @@ it is mathematically guaranteed to survive the cancellations and remain as ans a
 
 ## Implementation -> [click here](./Arrays/Majority Element.cpp)
 
+```
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -28,6 +29,6 @@ public:
         return ans;
     }
 };
-
+```
 e.g. -> Input: nums = [2,2,1,1,1,2,2]
         Output: 2
