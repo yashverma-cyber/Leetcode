@@ -1,7 +1,7 @@
 // Source : https://leetcode.com/problems/sort-colors/
 // Date   : 03-10-2026
 
-/* Q.75 Sort Colors
+/* Q.75 Sort Colors (medium)
 You are given an array nums with n objects colored red, white, or blue,
 sort them in-place so that objects of the same color are adjacent,
 with the colors in the order red, white, and blue.

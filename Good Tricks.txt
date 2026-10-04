@@ -1,3 +1,4 @@
 
-1. (missing numbers) ans ^= i ^ nums[i];   // 1^4^1 = 4 
-2. ranges::reverse(matrix); //reverse each row in a matrix
+1. (missing numbers) --> ans ^= i ^ nums[i];   // 1^4^1 = 4 
+2. reverse each row in a matrix --> ranges::reverse(matrix);
+3. Sort array --> sort(nums.begin(), nums.end());

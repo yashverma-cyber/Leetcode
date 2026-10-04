@@ -1,7 +1,7 @@
 // Source : https://leetcode.com/problems/valid-palindrome/
 // Date   : 03-10-2026
 
-/* Q. 125 Valid Palindrome
+/* Q. 125 Valid Palindrome (easy)
 A phrase is a palindrome if,
 after converting all uppercase letters into lowercase letters
 and removing all non-alphanumeric characters,
