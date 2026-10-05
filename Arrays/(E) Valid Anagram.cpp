@@ -12,7 +12,7 @@ class Solution
 {
     /* Approach: Use a frequency array to count the occurrences of each character in both strings.
     If the frequency arrays are identical, then the strings are anagrams. */
-    // A better (Hashing) approach in ../Hashing/(E) Two Sum.cpp
+    // A better (Hashing) approach in ../Hashing/(E) Valid Anagram.cpp
 public:
     bool isAnagram(string s, string t)
     {
