@@ -18,7 +18,7 @@ Explanation: The 4 subarrays are bolded and underlined below:
 class Solution
 {
     /* Approach : Hashing */
-    // Sliding Window approach at ../Arrays/(M) Binary Subarrays With Sum.cpp
+    // Sliding Window approach at ../Sliding Window/(M) Binary Subarrays With Sum.cpp
 public:
     int numSubarraysWithSum(vector<int> &nums, int goal)
     {
