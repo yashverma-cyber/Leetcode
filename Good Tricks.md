@@ -1,0 +1,19 @@
+
+1. (missing numbers) 
+ans ^= i ^ nums[i];   // 1^4^1 = 4 
+
+2. reverse each row in a matrix 
+ranges::reverse(matrix);
+
+3. Sort array 
+sort(nums.begin(), nums.end());
+
+4. Mid of array 
+int mid = st + (end - st) / 2; //to avoid buffer overflow
+
+5. for (auto& x : num) 
+to avoid copying, and read only
+
+6. For frequency count 
+//Vector => freq[s[l] - 'A']++;
+//Hash maps => freq[s[l]]++;
